@@ -1,0 +1,9 @@
+1) Start the Django server
+
+python manage.py runserver
+
+2) Admin page userid and password.  admin/admin
+
+3) Sync the code to the database
+
+python manage.py runserver
