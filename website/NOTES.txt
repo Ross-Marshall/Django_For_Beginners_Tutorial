@@ -7,3 +7,28 @@ python manage.py runserver
 3) Sync the code to the database
 
 python manage.py runserver
+
+4) Migrate models to the database
+
+python manage.py makemigrations music
+
+5) Make the migrations and update
+
+/me/code/django/website$ python manage.py sqlmigrate music 0001
+BEGIN;
+--
+-- Create model Album
+--
+CREATE TABLE "music_album" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "artist" varchar(250) NOT NULL, "album_title" varchar(500) NOT NULL, "genre" varchar(100) NOT NULL, "album_logo" varchar(1000) NOT NULL);
+--
+-- Create model Songs
+--
+CREATE TABLE "music_songs" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "file_type" varchar(10) NOT NULL, "song_title" varchar(250) NOT NULL, "album_id" integer NOT NULL REFERENCES "music_album" ("id"));
+CREATE INDEX "music_songs_95c3b9df" ON "music_songs" ("album_id");
+COMMIT;
+/me/code/django/website$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, music, sessions
+Running migrations:
+  Applying music.0001_initial... OK
+
