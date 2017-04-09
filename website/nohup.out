@@ -1,0 +1,516 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 09, 2017 - 03:37:32
+Django version 1.10.6, using settings 'website.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[09/Apr/2017 03:37:58] "GET /admin/ HTTP/1.1" 302 0
+[09/Apr/2017 03:37:58] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1653
+[09/Apr/2017 03:37:59] "GET /static/admin/css/base.css HTTP/1.1" 200 15937
+[09/Apr/2017 03:37:59] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[09/Apr/2017 03:37:59] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[09/Apr/2017 03:37:59] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[09/Apr/2017 03:37:59] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Not Found: /favicon.ico
+[09/Apr/2017 03:37:59] "GET /favicon.ico HTTP/1.1" 404 2044
+[09/Apr/2017 03:38:01] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1814
+[09/Apr/2017 03:38:01] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[09/Apr/2017 03:38:06] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[09/Apr/2017 03:38:06] "GET /admin/ HTTP/1.1" 200 2779
+[09/Apr/2017 03:38:06] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[09/Apr/2017 03:38:06] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[09/Apr/2017 03:38:06] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[09/Apr/2017 03:38:41] "GET /admin/auth/group/ HTTP/1.1" 200 3379
+[09/Apr/2017 03:38:41] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6117
+[09/Apr/2017 03:38:41] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6577
+[09/Apr/2017 03:38:41] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[09/Apr/2017 03:38:41] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[09/Apr/2017 03:38:41] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[09/Apr/2017 03:38:41] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[09/Apr/2017 03:38:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:38:41] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[09/Apr/2017 03:38:41] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[09/Apr/2017 03:38:41] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[09/Apr/2017 03:38:41] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[09/Apr/2017 03:38:41] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[09/Apr/2017 03:38:43] "GET /admin/ HTTP/1.1" 200 2779
+[09/Apr/2017 03:38:44] "GET /admin/auth/user/ HTTP/1.1" 200 6355
+[09/Apr/2017 03:38:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:38:44] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[09/Apr/2017 03:38:45] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[09/Apr/2017 03:39:04] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 13779
+[09/Apr/2017 03:39:04] "GET /static/admin/css/forms.css HTTP/1.1" 200 7750
+[09/Apr/2017 03:39:04] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5755
+[09/Apr/2017 03:39:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:39:04] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12389
+[09/Apr/2017 03:39:04] "GET /static/admin/js/change_form.js HTTP/1.1" 200 698
+[09/Apr/2017 03:39:04] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[09/Apr/2017 03:39:04] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[09/Apr/2017 03:39:04] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[09/Apr/2017 03:39:04] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[09/Apr/2017 03:39:04] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[09/Apr/2017 03:39:04] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[09/Apr/2017 03:39:04] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[09/Apr/2017 03:39:04] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[09/Apr/2017 03:39:05] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[09/Apr/2017 03:39:18] "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+[09/Apr/2017 03:39:18] "GET /admin/auth/user/ HTTP/1.1" 200 6538
+[09/Apr/2017 03:39:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 09, 2017 - 03:37:43
+Django version 1.10.6, using settings 'website.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7fb04247e7d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 113, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 249, in raise_last_exception
+    six.reraise(*_exception)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/apps.py", line 23, in ready
+    self.module.autodiscover()
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/admin.py", line 2, in <module>
+    from .models import Albums
+ImportError: cannot import name Albums
+[09/Apr/2017 03:42:12] "GET /admin/ HTTP/1.1" 200 3723
+[09/Apr/2017 03:42:14] "GET /admin/music/album/ HTTP/1.1" 200 4429
+[09/Apr/2017 03:42:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:42:24] "GET /admin/music/album/1/change/ HTTP/1.1" 200 5733
+[09/Apr/2017 03:42:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:42:33] "GET /admin/music/album/ HTTP/1.1" 200 4429
+[09/Apr/2017 03:42:39] "GET /admin/music/album/add/ HTTP/1.1" 200 5308
+[09/Apr/2017 03:42:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:44:40] "POST /admin/music/album/add/ HTTP/1.1" 302 0
+[09/Apr/2017 03:44:40] "GET /admin/music/album/3/change/ HTTP/1.1" 200 5924
+[09/Apr/2017 03:44:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:44:44] "GET /admin/music/album/ HTTP/1.1" 200 4667
+[09/Apr/2017 03:44:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:44:55] "GET /music HTTP/1.1" 301 0
+[09/Apr/2017 03:44:55] "GET /music/ HTTP/1.1" 200 40
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 09, 2017 - 03:41:31
+Django version 1.10.6, using settings 'website.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f3ec73c3ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/website/urls.py", line 21, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/urls.py", line 25, in <module>
+    url(r'^()$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7f45bccb6ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/website/urls.py", line 21, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/urls.py", line 25, in <module>
+    url(r'^(?P<album>)$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7f172cbbeed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/website/urls.py", line 21, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/urls.py", line 25, in <module>
+    url(r'^(?P<album>)$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7f39df5e7ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/website/urls.py", line 21, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/urls.py", line 25, in <module>
+    url(r'^(?P<album_id>)$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7fdf8f83fed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/website/urls.py", line 21, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/urls.py", line 25, in <module>
+    url(r'^(?P<album_id[0-9]+>)$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7fcb287deed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/website/urls.py", line 21, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/urls.py", line 25, in <module>
+    url(r'^(?P<album_id[0-9]+>)$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7fc29ff9bed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/website/urls.py", line 21, in <module>
+    url(r'^music/', include('music.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/me/code/django/website/music/urls.py", line 25, in <module>
+    url(r'^(?P<album_id[0-9]+>)$'),
+TypeError: url() takes at least 2 arguments (1 given)
+Unhandled exception in thread started by <function wrapper at 0x7f0ba5639ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 28, in check_resolver
+    warnings.extend(check_resolver(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 36, in check_resolver
+    warnings.extend(check_pattern_startswith_slash(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 97, in check_pattern_startswith_slash
+    regex_pattern = pattern.regex.pattern
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 105, in regex
+    (regex, six.text_type(e))
+django.core.exceptions.ImproperlyConfigured: "^(?P<album_id[0-9]+>)/$" is not a valid regular expression: bad character in group name 'album_id[0-9]+'
+Unhandled exception in thread started by <function wrapper at 0x7f55219dbed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 28, in check_resolver
+    warnings.extend(check_resolver(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 36, in check_resolver
+    warnings.extend(check_pattern_startswith_slash(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 97, in check_pattern_startswith_slash
+    regex_pattern = pattern.regex.pattern
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 105, in regex
+    (regex, six.text_type(e))
+django.core.exceptions.ImproperlyConfigured: "^(?P<album_id[0-9]+>)/$" is not a valid regular expression: bad character in group name 'album_id[0-9]+'
+Unhandled exception in thread started by <function wrapper at 0x7f97d729fed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 28, in check_resolver
+    warnings.extend(check_resolver(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 36, in check_resolver
+    warnings.extend(check_pattern_startswith_slash(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 97, in check_pattern_startswith_slash
+    regex_pattern = pattern.regex.pattern
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 105, in regex
+    (regex, six.text_type(e))
+django.core.exceptions.ImproperlyConfigured: "^(?P<album_id[0-9]+>)/$" is not a valid regular expression: bad character in group name 'album_id[0-9]+'
+Unhandled exception in thread started by <function wrapper at 0x7fd916873ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 28, in check_resolver
+    warnings.extend(check_resolver(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 36, in check_resolver
+    warnings.extend(check_pattern_startswith_slash(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 97, in check_pattern_startswith_slash
+    regex_pattern = pattern.regex.pattern
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 105, in regex
+    (regex, six.text_type(e))
+django.core.exceptions.ImproperlyConfigured: "^(?P<album_id[0-9]+>)/$" is not a valid regular expression: bad character in group name 'album_id[0-9]+'
+Unhandled exception in thread started by <function wrapper at 0x7f30e86ceed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 28, in check_resolver
+    warnings.extend(check_resolver(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 36, in check_resolver
+    warnings.extend(check_pattern_startswith_slash(pattern))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 97, in check_pattern_startswith_slash
+    regex_pattern = pattern.regex.pattern
+  File "/usr/local/lib/python2.7/dist-packages/django/urls/resolvers.py", line 105, in regex
+    (regex, six.text_type(e))
+django.core.exceptions.ImproperlyConfigured: "^(?P<album_id[0-9]+>)/$" is not a valid regular expression: bad character in group name 'album_id[0-9]+'
+[09/Apr/2017 03:58:16] "GET /admin HTTP/1.1" 301 0
+[09/Apr/2017 03:58:16] "GET /admin/ HTTP/1.1" 200 4024
+[09/Apr/2017 03:58:16] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[09/Apr/2017 03:58:16] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[09/Apr/2017 03:58:16] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[09/Apr/2017 03:58:16] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[09/Apr/2017 03:58:16] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[09/Apr/2017 03:58:20] "GET /admin/music/album/ HTTP/1.1" 200 4667
+[09/Apr/2017 03:58:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[09/Apr/2017 03:58:26] "GET /music/1 HTTP/1.1" 301 0
+[09/Apr/2017 03:58:26] "GET /music/1/ HTTP/1.1" 200 32
+Not Found: /music/w
+[09/Apr/2017 03:58:34] "GET /music/w HTTP/1.1" 404 2293
+[09/Apr/2017 03:58:40] "GET /music/2 HTTP/1.1" 301 0
+[09/Apr/2017 03:58:40] "GET /music/2/ HTTP/1.1" 200 32
+[09/Apr/2017 03:58:43] "GET /music/3 HTTP/1.1" 301 0
+[09/Apr/2017 03:58:43] "GET /music/3/ HTTP/1.1" 200 32
+[09/Apr/2017 03:58:47] "GET /music/55 HTTP/1.1" 301 0
+[09/Apr/2017 03:58:48] "GET /music/55/ HTTP/1.1" 200 33
