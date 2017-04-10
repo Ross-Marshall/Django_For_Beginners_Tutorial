@@ -1,0 +1,420 @@
+megazor@m5:~$ cd /me/code/django/website/
+megazor@m5:/me/code/django/website$ more NOTES.txt 
+1) Start the Django server
+
+python manage.py runserver
+
+2) Admin page userid and password.  admin/admin
+
+3) Sync the code to the database
+
+python manage.py runserver
+
+4) Migrate models to the database
+
+python manage.py makemigrations music
+
+5) Make the migrations and update
+
+/me/code/django/website$ python manage.py sqlmigrate music 0001
+BEGIN;
+--
+-- Create model Album
+--
+CREATE TABLE "music_album" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "artist" varchar(250) NOT NULL, "album_title" varchar(500) NOT NULL, "genre" varchar(100) NOT NULL, "album_logo" varchar(1000) NOT NULL);
+--
+-- Create model Songs
+--
+CREATE TABLE "music_songs" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "file_type" varchar(10) NOT NULL, "song_title" varchar(250) NOT NULL, "album_id" integer NOT NULL REFERENCES "music_album" ("id"));
+CREATE INDEX "music_songs_95c3b9df" ON "music_songs" ("album_id");
+COMMIT;
+/me/code/django/website$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, music, sessions
+Running migrations:
+  Applying music.0001_initial... OK
+
+
+megazor@m5:/me/code/django/website$ 
+Broadcast message from systemd-journald@m5 (Sun 2017-04-09 11:10:02 EDT):
+
+cupsd[3813]: Unable to read "/etc/cups/cups-files.conf" due to errors.                                                                                                                                                            
+                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                  
+Message from syslogd@m5 at Apr  9 11:10:02 ...                                                                                                                                                                                    
+ cupsd: Unable to read "/etc/cups/cups-files.conf" due to errors.                                                                                                                                                                 
+                                                                                                                                                                                                                                  
+Broadcast message from systemd-journald@m5 (Sun 2017-04-09 11:10:02 EDT):                                                                                                                                                         
+                                                                                                                                                                                                                                  
+cupsd[3817]: Unable to read "/etc/cups/cups-files.conf" due to errors.                                                                                                                                                            
+                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                  
+Message from syslogd@m5 at Apr  9 11:10:02 ...                                                                                                                                                                                    
+ cupsd: Unable to read "/etc/cups/cups-files.conf" due to errors.                                                                                                                                                                 
+                                                                                                                                                                                                                                  
+Broadcast message from systemd-journald@m5 (Sun 2017-04-09 11:10:02 EDT):                                                                                                                                                         
+                                                                                                                                                                                                                                  
+cupsd[3821]: Unable to read "/etc/cups/cups-files.conf" due to errors.                                                                                                                                                            
+                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                  
+Message from syslogd@m5 at Apr  9 11:10:02 ...                                                                                                                                                                                    
+ cupsd: Unable to read "/etc/cups/cups-files.conf" due to errors.                                                                                                                                                                 
+                                                                                                                                                                                                                                  
+Broadcast message from systemd-journald@m5 (Sun 2017-04-09 11:10:02 EDT):
+
+cupsd[3827]: Unable to read "/etc/cups/cups-files.conf" due to errors.
+
+
+Message from syslogd@m5 at Apr  9 11:10:02 ...
+ cupsd: Unable to read "/etc/cups/cups-files.conf" due to errors.
+
+Broadcast message from systemd-journald@m5 (Sun 2017-04-09 11:10:02 EDT):
+
+cupsd[3831]: Unable to read "/etc/cups/cups-files.conf" due to errors.
+
+
+Message from syslogd@m5 at Apr  9 11:10:02 ...
+ cupsd: Unable to read "/etc/cups/cups-files.conf" due to errors.
+
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ ls
+db.sqlite3  manage.py  music  nohup.out  NOTES.txt  website
+megazor@m5:/me/code/django/website$ cd ..
+megazor@m5:/me/code/django$ ls
+README.md  website
+megazor@m5:/me/code/django$ set -o vi
+megazor@m5:/me/code/django$ git add website/
+megazor@m5:/me/code/django$ git commit -m "Chapter 14 - Pre Templates"
+[master 44787cc] Chapter 14 - Pre Templates
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ rewrite website/music/views.pyc (99%)
+megazor@m5:/me/code/django$ git push -u origin master
+Username for 'https://github.com': Ross-Marshall
+Password for 'https://Ross-Marshall@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.16 KiB | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ross-Marshall/Django_For_Beginners_Tutorial.git
+   4f18cf7..44787cc  master -> master
+Branch master set up to track remote branch master from origin.
+megazor@m5:/me/code/django$ git add website/
+megazor@m5:/me/code/django$ git commit -m "Chapter 15 - Combine Loader"
+[master cc79b79] Chapter 15 - Combine Loader
+ 3 files changed, 17 insertions(+), 5 deletions(-)
+ create mode 100644 website/music/templates/music/index.html
+ rewrite website/music/views.pyc (99%)
+megazor@m5:/me/code/django$ git push -u origin master                 
+Username for 'https://github.com': Ross-Marshall
+Password for 'https://Ross-Marshall@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.42 KiB | 0 bytes/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ross-Marshall/Django_For_Beginners_Tutorial.git
+   44787cc..cc79b79  master -> master
+Branch master set up to track remote branch master from origin.
+megazor@m5:/me/code/django$ git add website/
+megazor@m5:/me/code/django$ git commit -m "Chapter 15"                 
+[master 7d75da7] Chapter 15
+ 3 files changed, 4 insertions(+), 6 deletions(-)
+ rewrite website/music/views.pyc (92%)
+megazor@m5:/me/code/django$ git push -u origin master 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 961 bytes | 0 bytes/s, done.
+Total 9 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/Ross-Marshall/Django_For_Beginners_Tutorial.git
+   cc79b79..7d75da7  master -> master
+Branch master set up to track remote branch master from origin.
+megazor@m5:/me/code/django$ ls website/music/
+admin.py  admin.pyc  apps.py  apps.pyc  __init__.py  __init__.pyc  migrations  models.py  models.pyc  templates  tests.py  urls.py  urls.pyc  views.py  views.pyc
+megazor@m5:/me/code/django$ ls website/templates
+ls: cannot access website/templates: No such file or directory
+megazor@m5:/me/code/django$ ls website/music/templates/
+music
+megazor@m5:/me/code/django$ ls website/music/templates/music/
+detail.html  index.html
+megazor@m5:/me/code/django$ mv website/music/templates/music/detail.html website/music/templates/music/default.html
+megazor@m5:/me/code/django$ ls website/music/templates/music/                                                      
+default.html  index.html
+megazor@m5:/me/code/django$ 
+megazor@m5:/me/code/django$ 
+megazor@m5:/me/code/django$ ls
+README.md  website
+megazor@m5:/me/code/django$ 
+megazor@m5:/me/code/django$ 
+megazor@m5:/me/code/django$ git add website/
+megazor@m5:/me/code/django$ git commit -m "Chapter 16 - Raising a 404 HTTP Error"
+[master b6bb1e9] Chapter 16 - Raising a 404 HTTP Error
+ 3 files changed, 8 insertions(+), 5 deletions(-)
+ create mode 100644 website/music/templates/music/detail.html
+ rewrite website/music/views.pyc (99%)
+megazor@m5:/me/code/django$ git push -u origin master
+Username for 'https://github.com': Ross-Marshall
+Password for 'https://Ross-Marshall@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.27 KiB | 0 bytes/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Ross-Marshall/Django_For_Beginners_Tutorial.git
+   7d75da7..b6bb1e9  master -> master
+Branch master set up to track remote branch master from origin.
+megazor@m5:/me/code/django$ python mangage.py shell
+python: can't open file 'mangage.py': [Errno 2] No such file or directory
+megazor@m5:/me/code/django$ 
+megazor@m5:/me/code/django$ 
+megazor@m5:/me/code/django$ python manage.py shell          
+python: can't open file 'manage.py': [Errno 2] No such file or directory
+megazor@m5:/me/code/django$ ls
+README.md  website
+megazor@m5:/me/code/django$ grep music_song */*
+Binary file website/db.sqlite3 matches
+grep: website/music: Is a directory
+website/NOTES.txt:CREATE TABLE "music_songs" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "file_type" varchar(10) NOT NULL, "song_title" varchar(250) NOT NULL, "album_id" integer NOT NULL REFERENCES "music_album" ("id"));
+website/NOTES.txt:CREATE INDEX "music_songs_95c3b9df" ON "music_songs" ("album_id");
+grep: website/website: Is a directory
+megazor@m5:/me/code/django$ grep music_song */*/*
+grep: website/music/migrations: Is a directory
+grep: website/music/templates: Is a directory
+megazor@m5:/me/code/django$ grep music_song */*/*/*
+grep: website/music/templates/music: Is a directory
+megazor@m5:/me/code/django$ grep music_song */*/*/*/*
+megazor@m5:/me/code/django$ python manage.py shell
+python: can't open file 'manage.py': [Errno 2] No such file or directory
+megazor@m5:/me/code/django$ python mangage.py shell
+python: can't open file 'mangage.py': [Errno 2] No such file or directory
+megazor@m5:/me/code/django$ python manage.py shell 
+python: can't open file 'manage.py': [Errno 2] No such file or directory
+megazor@m5:/me/code/django$ cd website/
+megazor@m5:/me/code/django/website$ ls
+db.sqlite3  manage.py  music  nohup.out  NOTES.txt  website
+megazor@m5:/me/code/django/website$ python manage.py shell
+Python 2.7.9 (default, Jun 29 2016, 13:08:31) 
+[GCC 4.9.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from music.models import Album, Song
+>>> album1=Album.objects.get(pk=1)
+>>> album1.title
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Album' object has no attribute 'title'
+>>> album1.artist
+u'The Rolling Stones'
+>>> song = Songs()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Songs' is not defined
+>>> song = Song() 
+>>> song.album=album1
+>>> song.file_type='mp3'
+>>> song.song_title="Satisfaction"
+>>> song.save
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 572, in __repr__
+    u = six.text_type(self)
+  File "/me/code/django/website/music/models.py", line 24, in __str__
+    return song.song_title
+NameError: global name 'song' is not defined
+>>> song.save()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/sqlite3/base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: music_song
+>>> 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ more NOTES.txt 
+1) Start the Django server
+
+python manage.py runserver
+
+2) Admin page userid and password.  admin/admin
+
+3) Sync the code to the database
+
+python manage.py runserver
+
+4) Migrate models to the database
+
+python manage.py makemigrations music
+
+5) Make the migrations and update
+
+/me/code/django/website$ python manage.py sqlmigrate music 0001
+BEGIN;
+--
+-- Create model Album
+--
+CREATE TABLE "music_album" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "artist" varchar(250) NOT NULL, "album_t
+itle" varchar(500) NOT NULL, "genre" varchar(100) NOT NULL, "album_logo" varchar(1000) NOT NULL);
+--
+-- Create model Songs
+--
+CREATE TABLE "music_songs" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "file_type" varchar(10) NOT NULL, "song_
+title" varchar(250) NOT NULL, "album_id" integer NOT NULL REFERENCES "music_album" ("id"));
+CREATE INDEX "music_songs_95c3b9df" ON "music_songs" ("album_id");
+COMMIT;
+/me/code/django/website$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, music, sessions
+Running migrations:
+  Applying music.0001_initial... OK
+
+
+megazor@m5:/me/code/django/website$ python manage.py makemigrations music
+Did you rename the music.Songs model to Song? [y/N] Y
+Migrations for 'music':
+  music/migrations/0002_auto_20170410_0202.py:
+    - Rename model Songs to Song
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ ^Chup python manage.py runserver &
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ python manage.py shell               
+Python 2.7.9 (default, Jun 29 2016, 13:08:31) 
+[GCC 4.9.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from music.models import Album,Song
+>>> album1=Album.objects.get(pk=1)
+>>> album1.artist
+u'The Rolling Stones'
+>>> song=Song()
+>>> song.album=album1
+>>> song.file_type='mp3'
+>>> song.song_title='(I Can't Get No) Satisfaction'
+  File "<console>", line 1
+    song.song_title='(I Can't Get No) Satisfaction'
+                            ^
+SyntaxError: invalid syntax
+>>> song.song_title="(I Can't Get No) Satisfaction" 
+>>> song.save()
+>>> song
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 572, in __repr__
+    u = six.text_type(self)
+  File "/me/code/django/website/music/models.py", line 24, in __str__
+    return song.song_title
+NameError: global name 'song' is not defined
+>>> album1
+<Album: Out of Our Heads - The Rolling Stones>
+>>> 
+megazor@m5:/me/code/django/website$ ls
+db.sqlite3  manage.py  music  nohup.out  NOTES.txt  website
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ git add website/
+megazor@m5:/me/code/django/website$ git commit -m "Chapter 17 - Adding Songs to our Database'
+> ^C
+megazor@m5:/me/code/django/website$ git commit -m "Chapter 17 - Adding Songs to our Database"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+        modified:   db.sqlite3
+        modified:   music/admin.py
+        modified:   music/admin.pyc
+        modified:   music/models.py
+        modified:   music/models.pyc
+
+Untracked files:
+        music/migrations/0002_auto_20170410_0202.py
+        music/migrations/0002_auto_20170410_0202.pyc
+
+no changes added to commit
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ git push -u origin master
+Username for 'https://github.com': Ross-Marshall
+Password for 'https://Ross-Marshall@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Ross-Marshall/Django_For_Beginners_Tutorial.git/'
+megazor@m5:/me/code/django/website$ git push -u origin master
+Username for 'https://github.com': Ross-Marshall
+Password for 'https://Ross-Marshall@github.com': 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ 
+megazor@m5:/me/code/django/website$ python manage.py shell
+Python 2.7.9 (default, Jun 29 2016, 13:08:31) 
+[GCC 4.9.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> album1
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'album1' is not defined
+>>> album1=Album.ob
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Album' is not defined
+>>> 
+>>> 
+>>> 
+>>> from music.models import Album,Song
+>>> album1=Album.objects.get(pk=1)
+>>> album1.artist
+u'The Rolling Stones'
+>>> album1.song_set_all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Album' object has no attribute 'song_set_all'
+>>> album1.song_set.all()
+<QuerySet [<Song: (I Can't Get No) Satisfaction>]>
+>>> album1.song_set.create(song_title='Mercy, Mercy'. file_type='mp3')
+  File "<console>", line 1
+    album1.song_set.create(song_title='Mercy, Mercy'. file_type='mp3')
+                                                               ^
+SyntaxError: invalid syntax
+>>> album1.song_set.create(song_title='Mercy, Mercy', file_type='mp3')
+<Song: Mercy, Mercy>
+>>> album1.song_set.create(song_title='The Spider and the Fly', file_type='mp3')
+<Song: The Spider and the Fly>
+>>> song=album1.song_set.create(song_title='The Last Time', file_type='mp3')
+>>> song.song_title
+'The Last Time'
+>>> song.song_set.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Song' object has no attribute 'song_set'
+
