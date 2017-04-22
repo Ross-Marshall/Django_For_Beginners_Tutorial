@@ -9,15 +9,14 @@
 
 <form action="{% url 'music:favorite' album.id %}" method="post">
     {% csrf_token %}
-    {% for song  in album.song_set.all %}
-        <input type="radio" id="song{{ forloop.counter }}" name="song" value="{{ song.id }}"> 
+    {% for song in album.song_set.all %}
+        <input type="radio" id="song{{ forloop.counter }}" name="song" value="{{ song.id }}" /> 
         <label for="song{{ forloop.counter }}">
              {{ song.song_title }}
              {% if song.is_favorite %}
-                 <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPCgtI4AeD2YcPomKYoYY_FGn_OHj06RZYQ92iNn2SCijAjucX" />
+                 <img src="http://i.imgur.com/b9b13Rd.png" /> 
              {% endif %}
-        </label>
-        <br>
+        </label><br>
     {% endfor %}
     <input type="submit" value="Favorite">
 </form>
